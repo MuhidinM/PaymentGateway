@@ -3,8 +3,8 @@ import React from "react";
 function Accounts() {
   return (
     <>
-      <div className="w-1/2 mx-auto">
-        <button className="mb-4 ml-8 btn btn-outline btn-primary">
+      <div className="w-5/6 mt-4">
+        <button className="mb-4 btn btn-outline btn-primary">
           <label htmlFor="my-modal-4" className="cursor-pointer">
             {" "}
             Add New

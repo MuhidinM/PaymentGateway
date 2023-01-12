@@ -3,13 +3,7 @@ import React from 'react'
 function Transactions() {
   return (
     <>
-      <div className="w-1/2 mx-auto">
-        <button className="mb-4 ml-8 btn btn-outline btn-primary">
-          <label htmlFor="my-modal-4" className="cursor-pointer">
-            {" "}
-            Add New
-          </label>
-        </button>
+      <div className="w-5/6 m-8">
         <div className="mt-4 overflow-x-auto">
           <table className="table w-full">
             <thead>

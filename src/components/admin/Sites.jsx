@@ -7,7 +7,6 @@ function Sites() {
       <div className="grid grid-cols-12 gap-4 mt-4 justify-self-auto">
         <div className="col-span-8">
           <button className="mb-4 ml-8 btn btn-outline btn-primary">Add New</button>
-          <button className="mb-4 ml-4 btn btn-outline btn-primary">Activate</button>
           <Tablesite />
         </div>
         <div className="col-span-4">

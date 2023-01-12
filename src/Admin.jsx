@@ -11,6 +11,7 @@ import Banks from "./components/admin/Banks";
 import Messages from "./components/admin/Messages";
 import Edit from "./components/admin/Edit";
 import Create from "./components/admin/Create";
+import Activate from "./components/admin/Activate";
 function Admin() {
   return (
     <>
@@ -25,6 +26,7 @@ function Admin() {
             <Route index element={<Home />}></Route>
             <Route path="sites" element={<Sites />}></Route>
             <Route path="banks" element={<Banks />}></Route>
+            <Route path="activate" element={<Activate />}></Route>
             <Route path="messages" element={<Messages />}></Route>
             <Route path="Profile" element={<Profile />}></Route>
             <Route path="*" element={<E404 />}></Route>
