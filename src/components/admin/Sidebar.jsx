@@ -7,6 +7,9 @@ function Sidebar() {
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
         <ul className="p-4 menu w-80 bg-base-100 text-base-content">
           {/* <!-- Sidebar content here --> */}
+          <a href="/admin" className="text-xl normal-case btn btn-ghost">
+            <img src="./Payment Gateway3.png" alt="" className="w-24"/>
+          </a>
           <li>
             <div>
               <svg

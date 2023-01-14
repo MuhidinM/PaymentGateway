@@ -19,9 +19,6 @@ function Nav() {
               ></path>
             </svg>
           </label>
-          <a href="/admin" className="text-xl normal-case btn btn-ghost">
-            <img src="./Payment Gateway3.png" alt="" className="w-24"/>
-          </a>
         </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">

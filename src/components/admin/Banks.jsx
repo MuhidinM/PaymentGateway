@@ -6,9 +6,9 @@ function Banks() {
     <>
       <div className="grid grid-cols-12 gap-4 mt-4 justify-self-auto">
         <div className="col-span-8">
-          <button className="mb-4 ml-8 btn btn-outline btn-primary">
-            <label htmlFor="my-modal-4" className="cursor-pointer"> Add New</label>
-          </button>
+          <label htmlFor="my-modal-4" className="mb-4 ml-8 btn btn-outline btn-primary">
+            <label className="cursor-pointer"> Add New</label>
+          </label>
           <Tablesite />
         </div>
         <div className="col-span-4">

@@ -70,12 +70,12 @@ function Login() {
                     Forgot password?
                   </a>
                 </div>
-                <button
+                <a href="/users"
                   type="submit"
                   class="w-full text-white bg-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary dark:hover:bg-primary dark:focus:ring-primary"
                 >
                   Sign in
-                </button>
+                </a>
                 <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                   Don’t have an account yet?
                   <a

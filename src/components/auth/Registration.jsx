@@ -3,148 +3,170 @@ import React from "react";
 function Registration() {
   return (
     <>
-      <section class="bg-gray-100 dark:bg-gray-900">
-        <div class="flex flex-col items-center justify-center lg:px-64 md:px-8 py-8 mx-auto md:h-screen lg:py-0">
-          <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-            <div class="py-8 px-4 mx-auto max-w-xl lg:py-16">
-              <ul className="steps">
-                <li className="step step-primary">Personal Detail</li>
-                <li className="step">Site Detail</li>
-                <li className="step">Authentication Detail</li>
-                <li className="step">Preview Form</li>
-              </ul>
-              <form action="#">
-                <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
-                  <div class="sm:col-span-2">
+      <section class="bg-gray-50 dark:bg-gray-900">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+          <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+            <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+              <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                Create and account
+              </h1>
+              <form class="space-y-4 md:space-y-6" action="#">
+                <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                  <div>
                     <label
-                      for="name"
+                      for="fname"
                       class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
-                      Full Name
+                      First Name
                     </label>
                     <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
-                      placeholder="First Middle Last"
-                      required=""
-                    />
-                  </div>
-                  <div class="w-full">
-                    <label
-                      for="site"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >
-                      Website
-                    </label>
-                    <input
-                      type="text"
-                      name="site"
-                      id="site"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
-                      placeholder="example.com"
-                      required=""
-                    />
-                  </div>
-                  <div class="w-full">
-                    <label
-                      for="email"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
-                      placeholder="someone@example.com"
+                      type="fname"
+                      name="fname"
+                      id="fname"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
+                      placeholder="Lelisa"
                       required=""
                     />
                   </div>
                   <div>
                     <label
-                      for="sector"
+                      for="mname"
                       class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
-                      Sector
+                      Middle Name
                     </label>
-                    <select
-                      id="sector"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
+                    <input
+                      type="mname"
+                      name="mname"
+                      id="mname"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
+                      placeholder="Abdusemed"
+                      required=""
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >
+                    Business email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
+                    placeholder="name@company.com"
+                    required=""
+                  />
+                </div>
+                <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                <div>
+                    <label
+                      for="bname"
+                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
-                      <option selected="">Select Sector</option>
-                      <option value="TV">Ecommerce</option>
-                      <option value="PC">example</option>
-                      <option value="PC">example</option>
-                      <option value="PC">example</option>
-                    </select>
+                      Business Name
+                    </label>
+                    <input
+                      type="bname"
+                      name="bname"
+                      id="bname"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
+                      placeholder="Egate"
+                      required=""
+                    />
                   </div>
                   <div>
                     <label
                       for="phone"
                       class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
-                      Phone
+                      Business Phone
                     </label>
                     <input
-                      type="number"
+                      type="phone"
                       name="phone"
                       id="phone"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
                       placeholder="0900000000"
                       required=""
                     />
                   </div>
-                  <div class="sm:col-span-2">
+                </div>
+                <div>
+                  <label
+                    for="password"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="••••••••"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
+                    required=""
+                  />
+                </div>
+                <div>
+                  <label
+                    for="confirm-password"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >
+                    Confirm password
+                  </label>
+                  <input
+                    type="confirm-password"
+                    name="confirm-password"
+                    id="confirm-password"
+                    placeholder="••••••••"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
+                    required=""
+                  />
+                </div>
+                <div class="flex items-start">
+                  <div class="flex items-center h-5">
+                    <input
+                      id="terms"
+                      aria-describedby="terms"
+                      type="checkbox"
+                      class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary dark:ring-offset-gray-800"
+                      required=""
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
                     <label
-                      for="licence"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      for="terms"
+                      class="font-light text-gray-500 dark:text-gray-300"
                     >
-                      Trade Licence
-                    </label>
-
-                    <div class="flex items-center justify-center w-full">
-                      <label
-                        for="dropzone-file"
-                        class="flex flex-col items-center justify-center w-full h-32 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+                      I accept the{" "}
+                      <a
+                        class="font-medium text-primary hover:underline dark:text-primary"
+                        href="/"
                       >
-                        <div class="flex flex-col items-center justify-center pt-5 pb-6">
-                          <svg
-                            aria-hidden="true"
-                            class="w-10 h-10 mb-3 text-gray-400"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
-                            ></path>
-                          </svg>
-                          <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                            <span class="font-semibold">Click to upload</span>{" "}
-                            or drag and drop
-                          </p>
-                          <p class="text-xs text-gray-500 dark:text-gray-400">
-                            SVG, PNG, JPG or GIF (MAX. 800x400px)
-                          </p>
-                        </div>
-                        <input id="dropzone-file" type="file" class="hidden" />
-                      </label>
-                    </div>
+                        Terms and Conditions
+                      </a>
+                    </label>
                   </div>
                 </div>
                 <button
                   type="submit"
-                  class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary rounded-lg focus:ring-4 focus:ring-primary dark:focus:ring-primary hover:bg-primary"
+                  class="w-full text-white bg-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary dark:hover:bg-primary dark:focus:ring-primary"
                 >
-                  Next
+                  Create an account
                 </button>
+                <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                  Already have an account?{" "}
+                  <a
+                    href="/auth"
+                    class="font-medium text-primary hover:underline dark:text-primary"
+                  >
+                    Login here
+                  </a>
+                </p>
               </form>
             </div>
           </div>
