@@ -1,15 +1,15 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import E404 from "./components/error/E404";
-import Nav from "./components/user/Nav";
-import Home from "./components/user/Home";
-import Uapi from "./components/user/Uapi";
-import Create from "./components/user/Create";
-import Accounts from "./components/user/Accounts";
-import Transactions from "./components/user/Transactions";
-import Sidebar from "./components/user/Sidebar";
-import Profile from "./components/user/Profile";
-import Settings from "./components/user/Settings";
+import E404 from "./pages/error/E404";
+import Nav from "./pages/user/Nav";
+import Home from "./pages/user/Home";
+import Uapi from "./pages/user/Uapi";
+import Create from "./pages/user/Create";
+import Accounts from "./pages/user/Accounts";
+import Transactions from "./pages/user/Transactions";
+import Sidebar from "./pages/user/Sidebar";
+import Profile from "./pages/user/Profile";
+import Settings from "./pages/user/Settings";
 
 function Users() {
   return (
@@ -30,7 +30,7 @@ function Users() {
             <Route path="*" element={<E404 />}></Route>
           </Routes>
         </div>
-        <Sidebar/>
+        <Sidebar />
       </div>
     </>
   );

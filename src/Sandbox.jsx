@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Sandbox() {
-  return (
-    <div>Sandbox</div>
-  )
+  return <div>Sandbox</div>;
 }
 
-export default Sandbox
+export default Sandbox;

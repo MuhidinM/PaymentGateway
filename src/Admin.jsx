@@ -1,17 +1,17 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/admin/Home";
-import Profile from "./components/admin/Profile";
-import E404 from "./components/error/E404";
-import Nav from "./components/admin/Nav";
-import Sidebar from "./components/admin/Sidebar";
-import Footer from "./components/admin/Footer";
-import Sites from "./components/admin/Sites";
-import Banks from "./components/admin/Banks";
-import Messages from "./components/admin/Messages";
-import Edit from "./components/admin/Edit";
-import Create from "./components/admin/Create";
-import Activate from "./components/admin/Activate";
+import Home from "./pages/admin/Home";
+import Profile from "./pages/admin/Profile";
+import E404 from "./pages/error/E404";
+import Nav from "./pages/admin/Nav";
+import Sidebar from "./pages/admin/Sidebar";
+import Footer from "./components/Footer";
+import Sites from "./pages/admin/Sites";
+import Banks from "./pages/admin/Banks";
+import Messages from "./pages/admin/Messages";
+import Edit from "./components/Edit";
+import Create from "./components/Create";
+import Activate from "./pages/admin/Activate";
 function Admin() {
   return (
     <>
